@@ -1,3 +1,7 @@
+// Объявляем переменные в глобальной области видимости
+const deadCounter = document.getElementById('dead');
+const lostCounter = document.getElementById('lost');
+
 // Функция, которая возвращает элемент лунки по индексу
 function getHole(index) {
     return document.getElementById(`hole${index}`);
@@ -32,8 +36,6 @@ function getHole(index) {
   
   // Функция для сброса счетчиков
   function resetCounters() {
-    const deadCounter = document.getElementById('dead');
-    const lostCounter = document.getElementById('lost');
     deadCounter.textContent = '0';
     lostCounter.textContent = '0';
   }
